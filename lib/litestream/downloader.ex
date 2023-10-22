@@ -4,9 +4,15 @@ defmodule Litestream.Downloader do
   """
 
   use OctoFetch,
-    latest_version: "0.3.9",
+    latest_version: "0.3.12",
     github_repo: "benbjohnson/litestream",
     download_versions: %{
+      "0.3.12" => [
+        {:darwin, :arm64, "1bdfd0aa7edca4acf8d66dffd869af2db087df5635d5d9a845ac5dfc4a548f6d"},
+        {:darwin, :amd64, "ec886c4a9c01cb888a199dab37b9c9abef544358e63cd60028067a1297d8d349"},
+        {:linux, :amd64, "2d415209bf924e721245a81a567eb1586b9e1de78d73b352db2fee36dcddf9b7"},
+        {:linux, :arm64, "57f35bdfb036f685cd6bf4fe18673779b74111cd726a01208c6115a016e4e212"}
+      ],
       "0.3.9" => [
         {:darwin, :amd64, "74599a34dc440c19544f533be2ef14cd4378ec1969b9b4fcfd24158946541869"},
         {:linux, :amd64, "806e1cca4a2a105a36f219a4c212a220569d50a8f13f45f38ebe49e6699ab99f"},
